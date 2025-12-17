@@ -19,3 +19,16 @@ console.log(testValues[0]);
 testValues.forEach(function (value) {
     console.log(value);
 });
+
+// Task
+// 1. Loop through the array above created using forEach.
+// 2. For each value, use an if/else statement to check if it's truthy or falsy.
+// 3. log a message for each element indicating which it is.
+
+testValues.forEach(eachElement => {
+    if (true) {
+        return console.log("this is truthy");
+    } else {
+        return console.log("this is falsy");
+    }
+});
