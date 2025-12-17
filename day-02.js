@@ -34,3 +34,25 @@ testValues.forEach(eachElement => {
 });
 
 // Reflection: I was surprised about how simple an if/else statement can be now that I've gotten a refresher on how it works. the forEach element is also really handy.
+
+// Step 10 - Type Coercion
+// == (loose equality): Converts the types of the values to match before comparing
+// Example: "5" == 5 -> true (string "5" becomes the number 5).
+// === (strict equality)
+// Does NOT convert types. Values must be the same type and value.
+// Example: "5" === 5 -> false (string vs number).
+// Key idea: use === unless you explicitly want type coercion, as it avoids unexpected behavior.
+
+// TASK: create two comparisons using == and two comparisons using ===.
+
+let comparisonOne = "1" == 1;
+let comparisonTwo = "true" == true;
+
+console.log(comparisonOne);
+console.log(comparisonTwo);
+
+let strictCompOne = "1" === 1;
+let strictCompTwo = "true" === true;
+
+console.log(strictCompOne);
+console.log(strictCompTwo);
