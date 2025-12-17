@@ -11,3 +11,11 @@ if ("Hello") {
 if (0) {
     return console.log("This is falsy");
 }
+
+const testValues = [1, "Hello", null];
+
+console.log(testValues[0]);
+
+testValues.forEach(function (value) {
+    console.log(value);
+});
