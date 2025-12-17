@@ -32,3 +32,5 @@ testValues.forEach(eachElement => {
         return console.log("this is falsy");
     }
 });
+
+// Reflection: I was surprised about how simple an if/else statement can be now that I've gotten a refresher on how it works. the forEach element is also really handy.
