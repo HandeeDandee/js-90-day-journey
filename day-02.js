@@ -69,12 +69,12 @@ const miniChallengeValues = [1, 23, "Hello World", false, null, "tired"];
 miniChallengeValues.forEach(eachElement => {
     let looseComp = eachElement == eachElement + 1;
     let strictComp = eachElement === eachElement + 1;
-    if (true) {
-        return console.log("TRUE");
+    if (eachElement) {
+        return console.log(eachElement + "is truthy");
         console.log(looseComp);
         console.log(strictComp);
     } else {
-        return console.log("FALSE");
+        return console.log(eachElement + "is falsy");
         console.log(looseComp);
         console.log(strictComp);
     }
