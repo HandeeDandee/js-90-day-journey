@@ -56,3 +56,26 @@ let strictCompTwo = "true" === true;
 
 console.log(strictCompOne);
 console.log(strictCompTwo);
+
+// Step 11 - Mini Challenge: Combined Task
+// 1. Create an array with at least 6 values MIXED
+// 2. Loop through the array with forEach:
+//   - For each value, use if/else to check true/false and log a message
+// 3. Add two comparisons between any two values using == and === inside the loop or after it, logging the results.
+// 4. Save, rune, commit and push the file.
+
+const miniChallengeValues = [1, 23, "Hello World", false, null, "tired"];
+
+miniChallengeValues.forEach(eachElement => {
+    let looseComp = eachElement == eachElement + 1;
+    let strictComp = eachElement === eachElement + 1;
+    if (true) {
+        return console.log("TRUE");
+        console.log(looseComp);
+        console.log(strictComp);
+    } else {
+        return console.log("FALSE");
+        console.log(looseComp);
+        console.log(strictComp);
+    }
+});
