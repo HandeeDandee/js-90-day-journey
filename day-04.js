@@ -93,3 +93,42 @@ function checkAge(age) {
 
 checkAge(20);
 checkAge(10);
+
+// Locking in the Mental Model (Important)
+// Seen all three stages of function maturity:
+// 1. Do something
+//   - console.log() inside the function
+// 2. Decide something
+//   - if / else + return
+// 3. Produce something reusable
+//   - store return value, use it elsewhere
+// going forward, we'll mostly use # 3.
+
+// Part 3: Final Step: return ends execution
+
+// Considered one of the most common junior mistakes
+// why return is an exit
+// Once a return runs:
+// - The function ends
+// - Nothing after it runs
+// - This is intentional and powerful
+// Example:
+// function test(value) {
+//   if (!value) {
+//     return "No Value";
+//   }
+// 
+//   return "Has Value";
+//   console.log("This will never run");
+// }
+
+function testReturn(value) {
+    if (!value) {
+        return "No Value";
+    }
+
+    return "Has Value";
+}
+
+testReturn("value");
+testReturn();
