@@ -51,3 +51,45 @@ function doubleNum(num) {
 }
 
 let result = doubleNum(4);
+
+// Part 2: Multiple returns (Decision Making)
+
+// We will combine what we already know:
+// - return
+// - if / else
+// - truthy / falsy logic
+
+// Why multiple returns exist
+// A function can return different values depending on conditions.
+// Example:
+// function checkAge(age) {
+//   if (age >= 18){
+//     return "Adult";
+//   } else {
+//     return "Minor";
+//   }
+// }
+// IMPORTANT:
+// - Only one return ever runs
+// - Once a return happens, the function stops
+
+// Task:
+// 1. Write a function that:
+//   - Takes one parameter
+//   - If the value is true -> return "Value exists"
+//   - Otherwise -> return "No Value"
+// 2. Call the function twice:
+//   - Once with a value
+//   - Once without a value
+// 3. Log both results
+
+function checkAge(age) {
+    if (age >= 18) {
+        return "Value Exists";
+    } else {
+        return "No Value";
+    }
+}
+
+checkAge(20);
+checkAge(10);
