@@ -115,3 +115,50 @@ cars[1];
 //   - Use .length to do this
 
 cars[cars.length - 1];
+
+// Part 3: Loops
+
+// What do loops solve
+// Using the above array:
+// let fruit = ["apple", "banana", "orange"];
+// If you wanted to log every item without loops, you'd have to do this:
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// That only works because:
+// - We know how many items are in the array
+// - The array never changes
+// Real data will not work like that
+
+// What is a loop?
+// A loop is a way to say: "Repeat this action for every item in the array"
+// Instead of writing the same code multiple times, you write it once, and the loop handles repetition
+
+// The for loop (conceptual)
+// This is the most basic loop in JavaScript.
+// Example:
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+// Let's break it down conceptually:
+// - i starts at 0
+// - The loops runs while i is less than the array length
+// - Each time:
+//   - i increases by 1
+//   - The next array item is accessed.
+// Essentially Automated Counting
+
+// VERY IMPORTANT CONCEPT
+// A loop is just a counter + a condition + repetition
+
+// Task 3:
+// 1. Using the same array (cars):
+//   - Write a for loop
+//   - Inside the loop, log each item in the array
+
+for (let i = 0; i < cars.length; i++) {
+    console.log(cars[i]);
+}
+
