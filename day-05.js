@@ -84,3 +84,34 @@ let cars = ["sedan", "SUV", "Truck"];
 cars[0];
 cars[1];
 
+// Part 2: Understanding .length
+
+// What is .length?
+// Every array in JS has a built-in property called length.
+// .length tells you how many items are inside the array.
+
+// Example:
+// let fruit = ["apple", "banana", "orange"];
+
+// fruits.length; // 3
+
+// IMPORTANT
+// It does not care what the items are, only how MANY there are
+
+// Why .length matters
+// Imaging you don't know how big an array is:
+// - Maybe today it has 3 items
+// - Tomorrow it could have 100, or it could have 1
+// Hard-coding indexes ([0], [1], [2]) breaks when data changes.
+// .length lets your code adapt automatically
+
+// CRITICAL CONCEPT: Index vs Length
+// if the LENGTH of an array is 3, then the INDEX of that same array is 2 (.length - 1)
+// Why? Remember this is due to arrays being a ZERO-BASED INDEX (they start at 0)
+
+// Task 2:
+// 1. Using the array already created above:
+//   - Log the last item in the array
+//   - Use .length to do this
+
+cars[cars.length - 1];
