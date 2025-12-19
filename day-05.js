@@ -60,3 +60,27 @@
 // Accessing a value:
 // fruits[0]; // "apple"
 
+// Why Arrays Matter
+// Arrays let yo8u:
+// - Group related data
+// - Loop over values
+// - Apply logic repeatedly
+// - Avoid copy-paste code
+
+// Arrays are the foundation of:
+// - Lists
+// - Tables
+// - User Data
+// - Almost everything dynamic
+
+// Task 1:
+// 1. Create an array with at least 3 values (any type is fine)
+// 2. Log:
+//   - The first item
+//   - The second item
+// 
+
+let cars = ["sedan", "SUV", "Truck"];
+cars[0];
+cars[1];
+
