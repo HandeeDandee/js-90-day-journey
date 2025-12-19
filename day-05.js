@@ -41,6 +41,7 @@
 // Day 5: Arrays (from zero)
 
 // Part 1: Readings
+
 // What is an Array?
 // An array is a single variable that holds multiple values, in a specific order.
 // Instead of this:
@@ -80,7 +81,7 @@
 //   - The second item
 // 
 
-let cars = ["sedan", "SUV", "Truck"];
+let cars = ["Sedan", "SUV", "Truck"];
 cars[0];
 cars[1];
 
@@ -162,3 +163,50 @@ for (let i = 0; i < cars.length; i++) {
     console.log(cars[i]);
 }
 
+// Part 4: Loops + Conditions
+
+// This section will combine two things we already know:
+// - for loops
+// - if statements
+// This is where arrays stop being "lists" and start becoming useful
+
+// Why combine loops and if?
+// A loop lets you look at every item
+// An if lets you decide what to do with each item
+// Kinda like saying: "For each item in this array, do something ONLY if it meets a condition"
+
+// Conceptual Example:
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > 3) {
+//     console.log(numbers[i]);
+//   }
+// }
+
+// What it does:
+// - Loops through every number
+// - Checks each number
+// - Only log numbers greater than 3
+
+// IMPORTANT MENTAL NOTE
+// Inside a loop:
+// - i = current position
+// - array[i] = current item
+// So the if is checking the CURRENT ITEM, not the whole array.
+
+// Task 4:
+// 1. Using the same above array (cars):
+//   - create a for loop
+//   - Inside the loop, if statement check:
+//     - If the item is a specific value exists
+//       - ex: if i = "apple", console.log("Found Apple!")
+//       - Otherwise do nothing
+
+for (let i = 0; i < cars.length; i++) {
+    if (cars[i] = "Sedan") {
+        console.log("Found Sedan");
+    }
+
+}
