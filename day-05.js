@@ -32,8 +32,31 @@
 //     isAdmin: false
 // };
 
-// checkAccess(user); ABOVE FUNCTION ON LINE 8
+// checkAccess(user); // ABOVE FUNCTION ON LINE 8
 // -> "no access"
 
 // Another way to think about it:
 // Early return turns complicated logic into a checklist
+
+// Day 5: Arrays (from zero)
+
+// Part 1: Readings
+// What is an Array?
+// An array is a single variable that holds multiple values, in a specific order.
+// Instead of this:
+// let fruit1 = "apple";
+// let fruit2 = "banana";
+// let fruit3 = "orange";
+
+// you do this:
+// let fruit = ["apple", "banana", "orange"];
+
+// Array Positions
+// Arrays are ZERO-BASED
+// ["apple", "banana", "orange"]
+//     0        1         2
+// First item -> index 0
+// Second item -> index 1
+// Accessing a value:
+// fruits[0]; // "apple"
+
