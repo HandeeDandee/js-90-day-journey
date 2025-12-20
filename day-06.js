@@ -59,3 +59,48 @@ function addTwo(number) {
 }
 
 console.log(addTwo(1));
+
+// Part 3: Functions + Parameters (Deeper Understanding)
+
+// Parameters vs Arguments (Reinforced)
+// Example:
+// function addTwo(number) {
+//     return number + 2;
+// }
+
+// addTwo(5);
+
+// number -> parameter (placeholder)
+// 5 -> argument (actual value)
+
+// Think of it like:
+
+// Parameter = labeled box
+// Argument = thing you put in the box
+
+// The function does not care what the value is -- it only cares about what it's told to do with it.
+
+// Part 4: Using Return Values
+
+// When a function returns a value, you can:
+// - Store it in a function
+// - Use it in another expression
+// - Pass it into another function later
+
+// Example:
+// let result = addTwo(5);
+// console.log(result);
+
+// The function runs -> returns a value -> that value gets stored.
+
+// Task 2:
+
+// 1. Call your addTwo function twice with different parameters
+// 2. Store each returned value in its own variable
+// 3. Log both variables
+
+let resultOne = addTwo(1);
+let resultTwo = addTwo(2);
+
+console.log(resultOne);
+console.log(resultTwo);
