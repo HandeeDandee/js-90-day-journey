@@ -210,3 +210,35 @@ for (let i = 0; i < cars.length; i++) {
     }
 
 }
+
+// Part 5: Introducing typeof
+
+// What is typeof?
+// An operator that tells you the type of a value
+// Example:
+// typeof "apple"; // "string"
+// typeof 42; // "number"
+// typeof true; // "boolean"
+
+// Key points
+// - Returns a string describing the type
+// - Useful inside if statements to make decisions based on type
+
+// MENTAL NOTE
+// Think of typeof as asking your program:
+// "Hey, what kind of thing is this?"
+// Now your program can act differently depending on the type
+
+// Task 5:
+// 1. Use the same array you've been working with
+// 2. Loop through every item
+// 3. Inside the loop:
+//   - If the item is a string, log "String found: <value>"
+//   - Otherwise, do nothing
+
+for (let i = 0; i < cars.length; i++) {
+    if (typeof cars[i] == "string") {
+        console.log("String found: " + cars[i]);
+    }
+    return;
+}
