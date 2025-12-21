@@ -16,21 +16,18 @@
 let numbers = [1, 2, 3, 4, 5,];
 let values = [1, 4, "Hello", false];
 
-function countNum(numbers) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (typeof numbers[i] == "string") {
-            console.log(numbers.length - 1);
+function countNum(array) {
+    let counter = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === "number") {
+            counter++;
         }
     }
-    return;
+    return counter;
 }
 
-function countNum(values) {
-    for (let i = 0; i < values.length; i++) {
-        if (typeof values[i] == "string") {
-            console.log(values.length - 1);
-        }
-    }
-    return;
-}
+let result1 = countNum(numbers);
+console.log(result1);
 
+let result2 = countNum(values);
+console.log(result2);
