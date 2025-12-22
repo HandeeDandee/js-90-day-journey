@@ -8,7 +8,7 @@ function getOnlyNumbers(inputArray) {
     let result = [];
     for (let i = 0; i < inputArray.length; i++) {
         if (typeof inputArray[i] === "number") {
-            console.log(inputArray[i]);
+            result.push(inputArray[i]);
         }
     }
     return result;
