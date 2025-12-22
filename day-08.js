@@ -15,3 +15,17 @@ function getOnlyNumbers(inputArray) {
 }
 
 console.log(getOnlyNumbers(values));
+
+// Day 8.5: New Function
+
+function getOnlyBooleans(inputArray) {
+    let result = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        if (typeof inputArray[i] === "boolean") {
+            result.push(inputArray[i]);
+        }
+    }
+    return result;
+}
+
+console.log(getOnlyBooleans(values));
