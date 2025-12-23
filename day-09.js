@@ -62,3 +62,40 @@ function getLargeNumbers(inputArray) {
 }
 
 console.log(getLargeNumbers(data));
+
+// Part 2: Slight Twist
+
+// New Concept: Logical OR(||)
+// In plain english:
+// conditionA || conditionB
+
+// Means:
+// If either condition is true -> pass
+
+// Task 2:
+// Write a function that:
+// - Is named getNumbersOrBooleans
+// - Takes one array
+// - Returns a new array
+// - Keeps items that are:
+//   - numbers OR booleans
+
+// Rules:
+// - Use typeof
+// - Use ||
+// - Same loop + push pattern
+// No logging inside loop
+
+let mixed = [1, "hi", true, 0, false, "42"];
+
+function getNumbersOrBooleans(inputArray) {
+    let result = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        if (typeof inputArray[i] === "number" || typeof inputArray[i] === "boolean") {
+            result.push(inputArray[i]);
+        }
+    }
+    return result;
+}
+
+console.log(getNumbersOrBooleans(mixed));
