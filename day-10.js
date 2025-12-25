@@ -43,7 +43,7 @@ console.log(multiply(3, 4)); // should return 12
 // 2. Take a number (limit)
 // 3. Return a new array containing only numbers greater than limit
 
-let data = [5, 12, "20", 30, true, 8, 100];
+let taskTwoData = [5, 12, "20", 30, true, 8, 100];
 
 function getNumbersGreaterThan(inputArray, limit) {
     let result = [];
@@ -55,5 +55,25 @@ function getNumbersGreaterThan(inputArray, limit) {
     return result;
 }
 
-console.log(getNumbersGreaterThan(data, 10));
+console.log(getNumbersGreaterThan(taskTwoData, 10));
 // expected: [12, 30, 100]
+
+// Task 3:
+// Function should:
+// 1. Only return numbers
+// 2. greater than min
+// 3. less than max
+
+let taskThreeData = [1, 5, 10, 15, 20, 25, "30", false];
+
+function getNumbersBetween(inputArray, min, max) {
+    let result = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        if (typeof inputArray[i] === "number" && inputArray[i] > min & inputArray[i] < max)
+            result.push(inputArray[i]);
+    }
+    return result;
+}
+
+console.log(getNumbersBetween(taskThreeData, 5, 20));
+// expected: [10, 15]
