@@ -34,3 +34,26 @@ function multiply(a, b) {
 }
 
 console.log(multiply(3, 4)); // should return 12
+
+// Task 2:
+
+// Write a function named getNumbersGreaterThan(inputArray, limit)
+// It should:
+// 1. Take an array
+// 2. Take a number (limit)
+// 3. Return a new array containing only numbers greater than limit
+
+let data = [5, 12, "20", 30, true, 8, 100];
+
+function getNumbersGreaterThan(inputArray, limit) {
+    let result = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        if (typeof inputArray[i] === "number" && inputArray[i] > limit) {
+            result.push(inputArray[i]);
+        }
+    }
+    return result;
+}
+
+console.log(getNumbersGreaterThan(data, 10));
+// expected: [12, 30, 100]
