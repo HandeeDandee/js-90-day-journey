@@ -69,7 +69,7 @@ let taskThreeData = [1, 5, 10, 15, 20, 25, "30", false];
 function getNumbersBetween(inputArray, min, max) {
     let result = [];
     for (let i = 0; i < inputArray.length; i++) {
-        if (typeof inputArray[i] === "number" && inputArray[i] > min & inputArray[i] < max)
+        if (typeof inputArray[i] === "number" && inputArray[i] > min && inputArray[i] < max)
             result.push(inputArray[i]);
     }
     return result;
