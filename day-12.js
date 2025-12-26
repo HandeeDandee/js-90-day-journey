@@ -59,8 +59,88 @@ let user = {
     isActive: true
 };
 
-if (user.isActive === true) {
+if (user.isActive === true) { // if (user.isActive) also works in this situation
     console.log("User is active");
 } else {
     console.log("User is not active");
 };
+
+// Part 2: Objects Inside Functions
+
+// When you pass an object into a function:
+// checkUser(user);
+
+// The function receives the entire object, not a copy of individual values.
+
+// Inside the function:
+// - You access properties the same exact way
+// - Dot notation doesn't change
+
+// Example:
+// function checkUserStatus(user) {
+//     if (user.isActive) {
+//         console.log("User is active");
+//     } else {
+//         console.log("User is not active");
+//     }
+// };
+
+// Task 2:
+// 1. Write a function called checkUserStatus
+// 2. It should:
+//   - Take one parameter (an object)
+//   - Check the object's isActive property
+//   - Log:
+//     - "User is active" or
+//     - "User is not active"
+// 3. Call the function using your user object
+
+// function checkUserStatus(user) {
+//     if (user.isActive) {
+//         console.log("User is active");
+//     } else {
+//         console.log("User is not active");
+//     }
+// };
+
+// checkUserStatus(user);
+
+// Part 3: Returning Values Instead of Logging
+
+// We'll introduce an important distinction:
+
+// console.log("Active");
+// Shows something TO you
+
+// return "Active";
+// Sends data back to the OTHER code
+
+// Most real functions return values, not logs.
+
+// Example:
+
+function getUserStatus(user) {
+    if (user.isActive) {
+        return "User is active";
+    } else {
+        return "User is not active";
+    }
+};
+
+// Nothing prints from this
+// To see the result:
+// let status = getUserStatus(user);
+// console.log(status);
+
+// Task 3:
+
+function getUserStatus(user) {
+    if (user.isActive) {
+        return "User is active";
+    } else {
+        return "User is not active";
+    }
+};
+
+let userStatus = getUserStatus(user);
+console.log(userStatus);
